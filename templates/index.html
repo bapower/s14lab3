@@ -27,7 +27,7 @@
                         <td><a href="/user/{{ user.user_id }}">{{ user.first_name }}</a></td>
                         <td>{{ user.age }}</td>
                         <td><a href="/user/edit/{{ user.user_id }}">Edit</a></td>
-                        <td><a href="/user/delete/{{ user.user_id }}">Delete</a></td>
+                        <td><a href="/confirm/delete/{{ user.user_id }}">Delete</a></td>
                     </tr>
                 {% endfor %}
             </table>

@@ -83,3 +83,9 @@ def seedDatabase(rows):
         Db.session.add(new_user)
         Db.session.commit()
     return redirect(url_for('index'))
+
+@app.route('/confirm/<action>/<id>')
+def confirmAction(action, id):
+    return render_template("confirmaction.html", action=action, id=id)
+
+
