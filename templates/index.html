@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab 1</title>
+
+    <!-- Styles -->
+    <link href="{{ url_for('static', filename='./css/index.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="form-box col-md-10 text-center">
+            <h1>Users</h1>
+            <table style="width:100%">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+                {% for user in users %}
+                    <tr>
+                        <td><a href="/user/{{ user.user_id }}">{{ user.first_name }}</a></td>
+                        <td>{{ user.age }}</td>
+                        <td><a href="/user/edit/{{ user.user_id }}">Edit</a></td>
+                        <td><a href="/user/delete/{{ user.user_id }}">Delete</a></td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="add-new">
+            <a href="/adduser" class="btn btn-primary inline_block">Add new user</a>
+        </div>
+    </div>
+</body>
+</html>

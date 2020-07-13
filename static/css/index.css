@@ -1,0 +1,34 @@
+body {
+  background-color: lightblue;
+}
+
+.form-box {
+  width: 50%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.form-box h1, .form-box h3   {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: tomato;
+}
+
+.input-group {
+	text-align:center;
+}
+
+form {
+	margin-top: 15px;
+}
+
+td {
+    text-align: center;
+}
+
+.add-new {
+  width:100%;
+  text-align:center;
+  margin-top: 25px;
+}
