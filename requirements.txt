@@ -5,5 +5,5 @@ sklearn==0.0
 flask-sqlalchemy==2.4.3
 psycopg2==2.8.5
 flask-wtf==0.14.3
-mimesis-4.0.0
-flask-heroku-0.1.9
+mimesis==4.0.0
+flask-heroku==0.1.9
