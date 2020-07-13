@@ -7,3 +7,4 @@ psycopg2==2.8.5
 flask-wtf==0.14.3
 psycopg2-binary-2.8.5
 mimesis-4.0.0
+flask-heroku-0.1.9
